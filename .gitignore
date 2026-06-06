@@ -1,0 +1,22 @@
+# Godot
+.godot/
+*.translation
+*.uid
+*.import
+
+# 编辑器插件（开发工具，不提交）
+addons/
+存档报告/
+实验报告/
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+*.code-workspace
+
+# 导出产物（Release 时再生成）
+export/
+export_presets.cfg
+templates/
