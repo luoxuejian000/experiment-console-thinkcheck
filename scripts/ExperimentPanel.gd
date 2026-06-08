@@ -895,7 +895,7 @@ func _set_status(text: String) -> void:
 func _on_full_response_received(content: String, reasoning: String) -> void:
 	var http = HTTPRequest.new()
 	add_child(http)
-	var request_body = JSON.stringify({"document": content})
+	var request_body = JSON.stringify({"document": content, "domain": "general"})
 	var headers = ["Content-Type: application/json"]
 	var error = http.request("http://localhost:8000/evaluate", headers, HTTPClient.METHOD_POST, request_body)
 	if error != OK:
